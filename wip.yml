@@ -1,0 +1,64 @@
+# Jer <alphastrata@gmail.com>
+# what the voyager should have been!
+
+units:
+  # Proxy Spacing Variables
+  kx: cx
+  ky: cy
+  # Padding Variables
+  px: kx + 2
+  py: ky + 2
+
+points:
+  zones:
+    matrix:
+      anchor:
+        rotate: 22.33
+      columns:
+        outer:
+        pinky:    
+          key:
+            stagger:  
+        ring:
+          key:
+            stagger: 4.2
+        middle:  
+          key:
+            stagger: 3.8
+        index:
+          key:
+            stagger: -5
+        inner:
+          key:
+            stagger: -1
+      rows: 
+        bottom:
+        home:
+        top:
+        nums:
+    thumbfan:
+      anchor:
+        ref: matrix_inner_bottom
+        shift: [12, -22]
+      columns:
+        near:
+          key.spread: px
+          key.splay: -43
+          key.origin: [-12.0, 13.0]
+          key.height: cx*1.5  # Set width of near thumb keys
+        home:
+          key.spread: px
+          key.splay: 0
+          key.origin: [-11.0, -11]
+          key.height: cx*1.5  # Set width of near thumb keys
+        far:
+          key.spread: px
+          key.splay: 0
+          key.origin: [0, 0]
+          key.height: cx*1.5  # Set width of near thumb keys
+      rows:
+        thumb:
+  rotate: -28
+  mirror:
+    ref: matrix_index_home
+    distance: 125.0
